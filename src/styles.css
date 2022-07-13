@@ -10,14 +10,15 @@
     background: rgb(238, 174, 202);
     background: radial-gradient(
       circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(199, 233, 148, 1) 100%
+      rgb(174, 238, 222) 50%,
+      rgb(222, 171, 18) 75%
     );
   }
   
   h1 {
     text-align: center;
     margin: 2rem 0 4rem 0;
+    color: darkblue;
   }
   
   .accordion {
@@ -40,10 +41,16 @@
   .accordion-title,
   .accordion-content {
     padding: 1rem;
+
+  }
+  .accordion-title{
+    margin-bottom: 1rem;
   }
   
   .accordion-content {
-    background-color: #39b9d2;
+    background-color: #b4d8e0;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
   }
   
   @media screen and (max-width: 700px) {
