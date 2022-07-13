@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
+  const accordionData = {
+    title: "section 1",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maxime itaque odit esse non vitae veritatis numquam quia amet obcaecati? Libero, eos necessitatibus hic sint iusto reiciendis tempore est doloribus.`,
+  };
+
+  const { title, content } = accordionData;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Accordion Demo</h1>
+      <div className="accordion">
+        <div className="accordion-item">
+          <div className="accordion-title">
+            <div>{title}</div>
+            <div>+</div>
+          </div>
+          <div className="accordion-content">{content}</div>
+        </div>
+      </div>
     </div>
   );
 }
